@@ -99,7 +99,7 @@ h1 span {
 
 
 .About {
-    padding: 50px 0;
+    padding: 10px 0;
 }
 
 .about-content {
@@ -156,13 +156,10 @@ h1 span {
 .Performances {
     padding: 10px 0;
     margin: 0;
-    text-align: center;
-    max-width: 75%;
-    margin: 0 auto; /* Centraliza o container */
 }
 
 .Performances h3 {
-    font-size: 6rem;
+    font-size: 8rem;
     margin-bottom: 20px;
     position: relative;
     font-weight: lighter;
@@ -171,16 +168,18 @@ h1 span {
     padding: 0;
     margin: 0;
     z-index: 1;
+    max-width: 75%;
+    margin: 0 auto; /* Centraliza o container */
 }
 
 .Performances h3::before {
     content: "Performances";
     position: absolute;
-    top: -10%;
-    right: 25%;  /* Alinha a sombra para a direita */
-    color: rgba(255, 165, 0, 0.3);
+    bottom: -30%;
+    right: 10%;  /* Alinha a sombra para a direita */
+    color: rgba(255, 165, 0, 0.1);
     text-shadow: 0 0 10px rgba(255, 165, 0, 0.1);
-    font-size: 6rem;
+    font-size: 8rem;
     font-family: 'Ogg', serif;
     transform: translate(10px, -10px); /* Ajuste a posição da sombra para um efeito de desfoque */
     font-weight: lighter;
@@ -192,19 +191,22 @@ h1 span {
 .Performances h3::after {
     content: "";
     position: absolute;
-    bottom: 25%;
+    bottom: 65%;
     right: -16%; /* Alinha a linha para o centro */
-    width: 62%;
+    width: 43rem;
     height: 1px;
     background-color: #ffa500;
 }
 
 .Performances p {
     font-size: 0.9rem;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto; /* Centraliza o container */
 }
 
 .Performances-content {
@@ -227,14 +229,91 @@ h1 span {
     z-index: -1; /* Posiciona a imagem atrás das Performance */
 }
 
+.Performance-content {
+    padding: 10px 0;
+    margin: 0;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto; /* Centraliza o container */
+    display: flex; /* Habilita o layout flexbox */
+    flex-wrap: wrap; 
+}
+
 .Performance {
     background-color: transparent; /* Cor de fundo mais escura */
     color: #fff;
-    padding: 20px;
-    width: 250px; /* Largura das Performance */
+    width: 250px;
+    padding: 10px;
     text-align: center;
+    flex: 1 0 33,33%;
 }
 
 .Performance p {
     margin-bottom: 5px;
 }
+
+.Classes h3{
+    font-size: 8rem;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: lighter;
+    font-family: 'Ogg', serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    max-width: 75%;
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.Classes h3::before {
+    content: "Classes";
+    position: absolute;
+    top: -10%;
+    right: 45%;  /* Alinha a sombra para a direita */
+    color: rgba(255, 165, 0, 0.1);
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.1);
+    font-size: 8rem;
+    font-family: 'Ogg', serif;
+    transform: translate(10px, -10px); /* Ajuste a posição da sombra para um efeito de desfoque */
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+.Classes h3::after {
+    content: "";
+    position: absolute;
+    right: -16%; /* Alinha a linha para o centro */
+    bottom: 15%;
+    width: 58rem;
+    height: 1px;
+    background-color: #ffa500;
+}
+
+.Classes-content {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .Class {
+    width: 50%; /* Cada coluna ocupará 50% da largura */
+    display: flex;
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 10px;
+  }
+  
+  .Class:nth-child(even) { /* Define estilo para elementos pares */
+    flex-direction: column-reverse; /* Inverte a ordem dos itens na coluna */
+  }
+  
+  .Class-img {
+    width: 100%; /* Ajuste a largura da imagem conforme necessário */
+    height: auto; /* Manter a proporção da imagem */
+  }
