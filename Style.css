@@ -216,7 +216,7 @@ h1 span {
     gap: 20px; /* Espaçamento entre as Performance */
     position: relative; /* Para posicionar a imagem por trás */
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);;
+    background-color: rgba(0, 0, 0, 0.8);;
 }
 
 .Performances-content img {
@@ -229,7 +229,7 @@ h1 span {
     z-index: -1; /* Posiciona a imagem atrás das Performance */
 }
 
-.Performance-content {
+.Performance-grid {
     padding: 10px 0;
     margin: 0;
     justify-content: space-between;
@@ -292,7 +292,7 @@ h1 span {
     background-color: #ffa500;
 }
 
-.Classes-content {
+.Classes-grid {
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -301,7 +301,7 @@ h1 span {
     padding: 10px;
   }
   
-  .Class {
+  .Class-card {
     width: 50%; /* Cada coluna ocupará 50% da largura */
     display: flex;
     flex-direction: column; /* Define a direção dos itens como coluna */
@@ -309,7 +309,7 @@ h1 span {
     padding: 10px;
   }
   
-  .Class:nth-child(even) { /* Define estilo para elementos pares */
+  .Class-card:nth-child(even) { /* Define estilo para elementos pares */
     flex-direction: column-reverse; /* Inverte a ordem dos itens na coluna */
   }
   
@@ -317,3 +317,204 @@ h1 span {
     width: 100%; /* Ajuste a largura da imagem conforme necessário */
     height: auto; /* Manter a proporção da imagem */
   }
+
+  
+  .Trial-lesson {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as performances */
+    gap: 20px; /* Espaçamento entre as Performance */
+    position: relative; /* Para posicionar a imagem por trás */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .Trial-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1
+  }
+  
+  .Trial-lesson p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 auto; /* Centraliza o container */
+    display: flex;
+    padding: 10px;
+  }
+  
+  
+.button-trial {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: background-color 0.3s ease;
+    max-width: 75%;
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.button-trial:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.Teachers {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos na vertical */
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.Teachers h3 {
+    font-size: 8rem;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: lighter;
+    font-family: 'Ogg', serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    max-width: 75%;
+    margin: 0 auto; /* Centraliza o container */
+}
+    
+.Teachers h3::before {
+    content: "Teachers";
+    position: absolute;
+    bottom: -30%;
+    right: 30%;  /* Alinha a sombra para a direita */
+    color: rgba(255, 165, 0, 0.1);
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.1);
+    font-size: 8rem;
+    font-family: 'Ogg', serif;
+    transform: translate(10px, -10px); /* Ajuste a posição da sombra para um efeito de desfoque */
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+    
+.Teachers h3::after {
+    content: "";
+    position: absolute;
+    bottom: 65%;
+    right: -3%; /* Alinha a linha para o centro */
+    width: 43rem;
+    height: 1px;
+    background-color: #ffa500;
+}
+
+.Teachers-grid{
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+.Teacher-card {
+    width: calc(33.33% - 10px); /* Calcula a largura da coluna, levando em consideração o padding */
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    margin-bottom: 10px; /* Espaçamento entre as colunas */
+  }
+  
+.Teacher-card img{
+    width: 300px; /* Define a largura máxima da imagem */
+    height: 300px; /* Ajusta a altura da imagem proporcionalmente à largura */
+    padding: 10px;
+}
+
+.button-teachers {
+    display: block; /* Ocupa toda a largura do container */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior */
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #ffa500;
+    transition: background-color 0.3s ease;
+}
+
+.button-teachers:hover {
+    background-color: #ff9100;
+    color: #fff;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.footer h3{
+    font-family: 'Ogg', serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: left;
+    flex-direction: column; /* Organize items vertically */
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    font-size: 0.9rem;
+    padding: 1px;
+    margin-bottom: 0%;
+}
+
+.footer-container form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Add some space between form and previous content */
+}
+
+.footer-container input[type="email"] {
+    padding: 10px;
+    border: 1px solid #fff;
+    width: 200px;
+    background-color: #fff;
+    color: #333; /* Dark gray for better contrast */
+    border: 1px solid #fff; /* Lighter gray border */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container button {
+    background-color: #000; /* Dark gray */
+    color: #fff;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #fff; /* Lighter gray border */
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1); /* White inner shadow */
+}
+
+.footer h3 {
+    font-family: 'Ogg', serif;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
