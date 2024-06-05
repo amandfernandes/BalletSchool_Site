@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Ogg&family=Proxima+Nova:wght@400;700&display=swap');
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.Nav-Img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    max-width: 75%;
+    margin: 0 auto;
+
+}
+
+nav{
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+nav ul{
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 0.6rem;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease ;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+h1 {
+    position: absolute;
+    top: 15rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    font-family: 'Ogg', serif; 
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adicionando a sombra */
+}
+  
+h1 span {
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.Gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  
+  .gallery-container {
+    display: flex; /* Use flexbox to arrange images horizontally */
+    flex-wrap: wrap; /* Wrap images to the next line if they don't fit */
+    justify-content: center; /* Center the images within the container */
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .gallery-item {
+    position: relative; /* Needed for absolute positioning of the image */
+    overflow: hidden;
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth image transition */
+    position: absolute; /* Position the image absolutely within the container */
+    top: 0;
+    left: 0;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.2); /* Zoom on hover */
+  }
+  
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.footer h3{
+    font-family: 'Ogg', serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: left;
+    flex-direction: column; /* Organize items vertically */
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    font-size: 0.6rem;
+    padding: 1px;
+    margin-bottom: 0%;
+}
+
+.footer-container form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Add some space between form and previous content */
+}
+
+.footer-container input[type="email"] {
+    padding: 10px;
+    font-size: 0.6rem;
+    border: 1px solid #fff;
+    width: 200px;
+    background-color: #fff;
+    color: #333; /* Dark gray for better contrast */
+    border: 1px solid #fff; /* Lighter gray border */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container button {
+    background-color: #000; /* Dark gray */
+    font-size: 0.6rem;
+    color: #fff;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #fff; /* Lighter gray border */
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1); /* White inner shadow */
+}
+
+.footer h3 {
+    font-family: 'Ogg', serif;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+}

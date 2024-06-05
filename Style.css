@@ -26,6 +26,7 @@ header {
     top: 0;
     left: 0;
     z-index: -1;
+
 }
 
 nav{
@@ -55,7 +56,7 @@ nav ul li a{
     color: #fff;
     position: relative;
     transition: all 0.3s ease;
-    font-size: 0.9em;
+    font-size: 0.6rem;
 }
 
 nav ul li a:hover{
@@ -87,7 +88,7 @@ h1{
     z-index: 1;
     color: white;
     font-family: 'Ogg', serif; 
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 0.5rem;
 }
   
@@ -131,7 +132,7 @@ h1 span {
 }
 
 .about-text p {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     line-height: 1.6;
     display: inline-block;
     width: fit-content;
@@ -140,7 +141,7 @@ h1 span {
 .button {
     display: inline-block;
     padding: 10px 15px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     background-color: transparent;
     color: #000;
     text-decoration: none;
@@ -199,7 +200,7 @@ h1 span {
 }
 
 .Performances p {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     padding: 10px;
     margin: 0;
     line-height: 1.6;
@@ -250,6 +251,7 @@ h1 span {
 
 .Performance p {
     margin-bottom: 5px;
+    font-size: 0.8rem;
 }
 
 .Classes h3{
@@ -307,6 +309,7 @@ h1 span {
     flex-direction: column; /* Define a direção dos itens como coluna */
     align-items: center; /* Centraliza os itens horizontalmente */
     padding: 10px;
+    font-size: 0.8rem;
   }
   
   .Class-card:nth-child(even) { /* Define estilo para elementos pares */
@@ -314,8 +317,8 @@ h1 span {
   }
   
   .Class-img {
-    width: 100%; /* Ajuste a largura da imagem conforme necessário */
-    height: auto; /* Manter a proporção da imagem */
+    width: 200px; /* Ajuste a largura da imagem conforme necessário */
+    height: 350px; /* Manter a proporção da imagem */
   }
 
   
@@ -342,7 +345,7 @@ h1 span {
   }
   
   .Trial-lesson p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
     margin: 0 auto; /* Centraliza o container */
     display: flex;
@@ -353,7 +356,7 @@ h1 span {
 .button-trial {
     display: inline-block;
     padding: 10px 15px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     background-color: transparent;
     color: #fff;
     text-decoration: none;
@@ -410,8 +413,8 @@ h1 span {
     content: "";
     position: absolute;
     bottom: 65%;
-    right: -3%; /* Alinha a linha para o centro */
-    width: 43rem;
+    right: -15%; /* Alinha a linha para o centro */
+    width: 45rem;
     height: 1px;
     background-color: #ffa500;
 }
@@ -434,8 +437,8 @@ h1 span {
   }
   
 .Teacher-card img{
-    width: 300px; /* Define a largura máxima da imagem */
-    height: 300px; /* Ajusta a altura da imagem proporcionalmente à largura */
+    width: 250px; /* Define a largura máxima da imagem */
+    height: 250px; /* Ajusta a altura da imagem proporcionalmente à largura */
     padding: 10px;
 }
 
@@ -443,7 +446,7 @@ h1 span {
     display: block; /* Ocupa toda a largura do container */
     margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior */
     padding: 10px 15px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     background-color: transparent;
     color: #000;
     text-decoration: none;
@@ -478,7 +481,7 @@ footer {
 }
 
 .footer-container p {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     padding: 1px;
     margin-bottom: 0%;
 }
@@ -491,6 +494,7 @@ footer {
 
 .footer-container input[type="email"] {
     padding: 10px;
+    font-size: 0.6rem;
     border: 1px solid #fff;
     width: 200px;
     background-color: #fff;
@@ -501,6 +505,7 @@ footer {
 
 .footer-container button {
     background-color: #000; /* Dark gray */
+    font-size: 0.6rem;
     color: #fff;
     padding: 10px 20px;
     width: 150px;

@@ -1,0 +1,292 @@
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #f2f2f2;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.Nav-Img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+nav{
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+nav ul{
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 0.6rem;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease ;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+h1{
+    position: absolute;
+    top: 15rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-family: 'Ogg', serif; 
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Fist-Step {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.Step-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.Step-content img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.Step-text {
+    max-width: 600px;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.First-Step h4 {
+    font-family: "Ogg", serif;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.Step-text p {
+    font-size: 0.6rem;
+    line-height: 1.6;
+    display: inline-block;
+    width: fit-content;
+}
+
+.Areas {
+    padding: 10px 0;
+}
+
+.areas-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.areas-content img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.area-text {
+    max-width: 600px;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.area-text h4 {
+    font-family: "Ogg", serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+.area-text ul {
+    font-size: 0.6rem;
+    line-height: 1.6;
+    display: flex; /* Usar flexbox */
+    flex-wrap: wrap; /* Quebrar em linhas quando necessário */
+    justify-content: space-between; /* Espaço entre as colunas */
+    width: fit-content;
+}
+
+.area-text li { 
+    width: calc(50% - 10px); /* Largura da coluna, ajustar a 10px para o espaçamento */
+    margin-bottom: 5px; /* Espaçamento entre os itens */
+}
+
+.area-text p {
+    font-size: 0.6rem;
+    line-height: 1.6;
+    display: inline-block;
+    width: fit-content;
+}
+
+.Education {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.Education-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.Education-content img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.Education-text {
+    max-width: 600px;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.Education-text h4 {
+    font-family: "Ogg", serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+.Education-text p {
+    font-size: 0.6rem;
+    line-height: 1.6;
+    display: inline-block;
+    width: fit-content;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as performances */
+    gap: 20px; /* Espaçamento entre as Performance */
+    position: relative; /* Para posicionar a imagem por trás */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);;
+    text-align: center;
+    padding: 30px;
+  }
+
+.Trial-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1
+  }
+  
+footer p {
+    font-size: 0.8rem;
+    color: #fff;
+    margin: 0 auto; /* Centraliza o container */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+footer input[type="name"] {
+    padding: 10px;
+    font-size: 0.6rem;
+    border: 1px solid #fff;
+    width: 200px;
+    background-color: #fff;
+    color: #333; /* Dark gray for better contrast */
+    border: 1px solid #fff; /* Lighter gray border */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer input[type="number"] {
+    padding: 10px;
+    font-size: 0.6rem;
+    border: 1px solid #fff;
+    width: 200px;
+    background-color: #fff;
+    color: #333; /* Dark gray for better contrast */
+    border: 1px solid #fff; /* Lighter gray border */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer button {
+    background-color: #000; /* Dark gray */
+    font-size: 0.6rem;
+    color: #fff;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #fff; /* Lighter gray border */
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1); /* White inner shadow */
+}
