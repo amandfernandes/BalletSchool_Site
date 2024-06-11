@@ -100,3 +100,46 @@ h1 span {
     font-weight: lighter;
     font-family: 'Proxima Nova', sans-serif;
 }
+
+
+.HistoryContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding: 2em;
+}
+
+.HistoryContent img {
+    width: 400px;
+    box-shadow: 0 0 10px #000;
+}
+
+.History {
+    text-align: left;
+    max-width: 500px;
+}
+
+.History h2 {
+    font-family: 'Ogg', serif; 
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    z-index: 1;
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.History h3 {
+    font-family: 'Ogg', serif;
+    font-weight: lighter;
+    font-size: 1.7rem;
+    margin-bottom: 1em;
+}
+
+.History p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+}
