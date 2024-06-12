@@ -225,7 +225,7 @@ h1{
 }
 
 
-footer {
+.Trial-lesson {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centraliza as performances */
@@ -237,7 +237,7 @@ footer {
     padding: 30px;
   }
 
-.Trial-img{
+#Trial-img{
     position: absolute;
     top: 0;
     left: 0;
@@ -247,7 +247,7 @@ footer {
     z-index: -1
   }
   
-footer p {
+.Trial-lesson p {
     font-size: 0.8rem;
     color: #fff;
     margin: 0 auto; /* Centraliza o container */
@@ -257,7 +257,7 @@ footer p {
     padding: 10px;
   }
   
-footer input[type="name"] {
+.Trial-lesson input[type="name"] {
     padding: 10px;
     font-size: 0.6rem;
     border: 1px solid #fff;
@@ -268,7 +268,7 @@ footer input[type="name"] {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-footer input[type="number"] {
+.Trial-lesson input[type="number"] {
     padding: 10px;
     font-size: 0.6rem;
     border: 1px solid #fff;
@@ -279,7 +279,7 @@ footer input[type="number"] {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-footer button {
+.Trial-lesson button {
     background-color: #000; /* Dark gray */
     font-size: 0.6rem;
     color: #fff;
@@ -290,3 +290,39 @@ footer button {
     border: 1px solid #fff; /* Lighter gray border */
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1); /* White inner shadow */
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.footer h3{
+    font-family: 'Ogg', serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: left;
+    flex-direction: column; /* Organize items vertically */
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    font-size: 0.6rem;
+    padding: 1px;
+    margin-bottom: 0%;
+}
+
+.footer h3 {
+    font-family: 'Ogg', serif;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+}
+

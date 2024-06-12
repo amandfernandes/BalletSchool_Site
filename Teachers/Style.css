@@ -26,8 +26,6 @@ header {
     top: 0;
     left: 0;
     z-index: -1;
-    max-height: 25%;
-    margin: 0 auto;
 
 }
 
@@ -81,18 +79,17 @@ nav ul li a:hover::after{
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
 
-h1 {
+h1{
     position: absolute;
     top: 10rem;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
-    color: #fff;
+    color: white;
     font-family: 'Ogg', serif; 
     font-size: 5rem;
     margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adicionando a sombra */
 }
   
 h1 span {
@@ -102,97 +99,43 @@ h1 span {
 }
 
 
-.HistoryContent {
+.Teachers {
     display: flex;
-    flex-direction: column; /* Organiza os elementos em coluna */
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 50px 0;
     max-width: 75%;
     margin: 0 auto;
-    gap: 3em;
-    padding: 2em;
 }
 
-.HistoryContent {
+.Teachers-grid{
     display: flex;
-    flex-direction: column; /* Organiza os elementos em coluna */
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    justify-content: space-between;
     max-width: 75%;
     margin: 0 auto;
-    gap: 3em;
-    padding: 2em;
-}
-
-.HistoryContent img {
-    width: 400px;
-    height: auto;
-    box-shadow: 0 0 10px #000;
-}
-
-#History-BS{
-    width: 30%;
-    height: auto;
-    box-shadow: 0 0 10px #000;
-}
-
-.History-text {
-    text-align: left;
-    max-width: 500px;
-}
-
-.History-grid h2 {
-    font-family: 'Ogg', serif; 
-    color: #000; /* Define a cor da letra como transparente */
-    text-shadow: 
-        1px 0 0 white, /* Sombra branca à direita */
-        -1px 0 0 white, /* Sombra branca à esquerda */
-        0 1px 0 white, /* Sombra branca abaixo */
-        0 -1px 0 white; /* Sombra branca acima */
-    font-size: 2em;
-    margin-bottom: 1em;
+    padding: 10px;
+  }
+  
+.Teacher-card {
+    width: calc(25% - 5px); /* Calcula a largura da coluna, levando em consideração o padding */
+    padding: 10px;
     text-align: center;
-    z-index: 1;
-    font-size: 5rem;
-    margin-bottom: 0.5rem;
-
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    margin-bottom: 5px; /* Espaçamento entre as colunas */
+  }
+  
+.Teacher-card img{
+    width: 130px; /* Define a largura máxima da imagem */
+    height: 150px; /* Ajusta a altura da imagem proporcionalmente à largura */
+    padding: 10px;
 }
 
-.History-text h3 {
-    font-family: 'Ogg', serif;
-    font-weight: lighter;
-    font-size: 1.5rem;
-    margin-bottom: 1em;
-}
+.Teacher-card:hover img {
+    transform: scale(1.2); /* Zoom on hover */
+  }
 
-.History-text p {
-    font-size: 0.7rem;
-    line-height: 1.5;
-    margin-bottom: 0.6rem;
-}
-
-.History-grid {
-    display: flex;
-    flex-direction: row; /* Define a direção dos elementos como linha */
-    align-items: center; /* Centraliza os elementos verticalmente */
-    max-width: 100%; /* Define a largura de cada "History-grid" */
-    margin: 0 auto; /* Centraliza a "History-grid" horizontalmente */
-    gap: 1em; /* Espaçamento entre os elementos */
-}
-
-.History-grid:nth-child(odd) {
-    flex-direction: row; /* Define a direção dos elementos como linha */
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
-}
-
-.History-grid:nth-child(even) {
-    flex-direction: row-reverse; /* Define a direção dos elementos como linha invertida */
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
-}
-
-
+  
 footer {
     background-color: black;
     color: white;
