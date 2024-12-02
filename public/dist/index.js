@@ -3,9 +3,9 @@ var nav = document.createElement('nav');
 var ul = document.createElement('ul');
 var links = [
     { href: "#", text: "Home" },
-    { href: "./public/history.html", text: "History" },
-    { href: "./public/teachers.html", text: "Teachers" },
-    { href: "./public/gallery.html", text: "Gallery" }
+    { href: "../history.html", text: "History" },
+    { href: "../teachers.html", text: "Teachers" },
+    { href: "../gallery.html", text: "Gallery" }
 ];
 links.forEach(function (link) {
     var li = document.createElement("li");
