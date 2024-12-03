@@ -122,10 +122,10 @@ classes.appendChild(classesTitle);
 var classesGrid = document.createElement('div');
 classesGrid.classList.add('classes-grid');
 var classroom = [
-    { href: './public/balletClass.html', img: './public/assets/', text: 'Ballet Class' },
-    { href: '#', img: './public/assets/', text: 'Theatre Dance Class' },
-    { href: '#', img: './public/assets/', text: 'Comtemporary Class' },
-    { href: '#', img: './public/assets/', text: 'Stretchind Class' }
+    { href: '../balletClass.html', img: './public/assets/', text: 'Ballet Class' },
+    { href: '#', img: '../assets/', text: 'Theatre Dance Class' },
+    { href: '#', img: '../assets/', text: 'Comtemporary Class' },
+    { href: '#', img: '../assets/', text: 'Stretchind Class' }
 ];
 classroom.forEach(function (classItem) {
     var classCard = document.createElement('div');
@@ -170,9 +170,9 @@ teachersContent.appendChild(teachersTitle);
 var teachersGrid = document.createElement('div');
 teachersGrid.classList.add('teachers-grid');
 var teacher = [
-    { img: './public/assets/', name: 'Ana Botafogo' },
-    { img: './public/assets/', name: 'Pyot Ilyich Tchaikovsky' },
-    { img: './public/assets/', name: 'Ingrid Silva' }
+    { img: '../assets/', name: 'Ana Botafogo' },
+    { img: '../assets/', name: 'Pyot Ilyich Tchaikovsky' },
+    { img: '../assets/', name: 'Ingrid Silva' }
 ];
 teacher.forEach(function (t) {
     var teacherCard = document.createElement('div');
@@ -187,7 +187,7 @@ teacher.forEach(function (t) {
     teachersGrid.appendChild(teacherCard);
 });
 var teachersButton = document.createElement('a');
-teachersButton.href = './public/teachers.html';
+teachersButton.href = '../teachers.html';
 teachersButton.classList.add('button-teachers');
 teachersButton.textContent = 'Show More';
 teachersGrid.appendChild(teachersButton);

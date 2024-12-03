@@ -4,9 +4,9 @@ const nav: HTMLElement = document.createElement('nav');
 const ul: HTMLElement = document.createElement('ul');
 const links = [
     {href: "#", text: "Home"},
-    {href: "./public/history.html", text: "History"},
-    {href: "./public/teachers.html", text: "Teachers"},
-    {href: "./public/gallery.html", text: "Gallery"}
+    {href: "../history.html", text: "History"},
+    {href: "../teachers.html", text: "Teachers"},
+    {href: "../gallery.html", text: "Gallery"}
 ];
 links.forEach(link => {
     const li: HTMLLIElement = document.createElement("li");
@@ -175,10 +175,10 @@ const classesGrid: HTMLElement = document.createElement('div');
 classesGrid.classList.add('classes-grid');
 
 const classroom = [
-    {href: './public/balletClass.html', img: './public/assets/', text: 'Ballet Class'},
-    {href: '#', img: './public/assets/', text: 'Theatre Dance Class'},
-    {href: '#', img: './public/assets/', text: 'Comtemporary Class'},
-    {href: '#', img: './public/assets/', text: 'Stretchind Class'}
+    {href: '../balletClass.html', img: './public/assets/', text: 'Ballet Class'},
+    {href: '#', img: '../assets/', text: 'Theatre Dance Class'},
+    {href: '#', img: '../assets/', text: 'Comtemporary Class'},
+    {href: '#', img: '../assets/', text: 'Stretchind Class'}
 ];
 
 classroom.forEach(classItem => {
@@ -244,9 +244,9 @@ const teachersGrid: HTMLElement = document.createElement('div');
 teachersGrid.classList.add('teachers-grid');
 
 const teacher = [
-    {img: './public/assets/', name: 'Ana Botafogo'},
-    {img: './public/assets/', name: 'Pyot Ilyich Tchaikovsky'},
-    {img: './public/assets/', name: 'Ingrid Silva'}
+    {img: '../assets/', name: 'Ana Botafogo'},
+    {img: '../assets/', name: 'Pyot Ilyich Tchaikovsky'},
+    {img: '../assets/', name: 'Ingrid Silva'}
 ];
 
 teacher.forEach(t => {
@@ -266,7 +266,7 @@ teacher.forEach(t => {
 });
 
 const teachersButton: HTMLAnchorElement = document.createElement('a');
-teachersButton.href = './public/teachers.html';
+teachersButton.href = '../teachers.html';
 teachersButton.classList.add('button-teachers');
 teachersButton.textContent = 'Show More';
 teachersGrid.appendChild(teachersButton);
