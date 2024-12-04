@@ -230,29 +230,29 @@ trialLesson.appendChild(trialContent);
 document.body.appendChild(trialLesson);
 
 
-const teachers: HTMLElement = document.createElement('section');
-teachers.classList.add('teachers');
+const teacher: HTMLElement = document.createElement('section');
+teacher.classList.add('teachers');
 
-const teachersContent: HTMLElement = document.createElement('div');
-teachersContent.classList.add('teachers-content');
+const teacherContent: HTMLElement = document.createElement('div');
+teacherContent.classList.add('teachers-content');
 
-const teachersTitle: HTMLElement = document.createElement('h3');
-teachersTitle.textContent = 'Teachers';
-teachersContent.appendChild(teachersTitle);
+const teacherTitle: HTMLElement = document.createElement('h3');
+teacherTitle.textContent = 'Teachers';
+teacherContent.appendChild(teacherTitle);
 
-const teachersGrid: HTMLElement = document.createElement('div');
-teachersGrid.classList.add('teachers-grid');
+const teacherGrid: HTMLElement = document.createElement('div');
+teacherGrid.classList.add('teachers-grid');
 
-const teacher = [
-    {img: '../assets/', name: 'Ana Botafogo'},
+const teacherImage = [
+    {img: '../assets/', name: 'Anna Pavlova'},
     {img: '../assets/', name: 'Pyot Ilyich Tchaikovsky'},
-    {img: '../assets/', name: 'Ingrid Silva'}
+    {img: '../assets/', name: 'Sylvie Guillem'}
 ];
 
-teacher.forEach(t => {
+teacherImage.forEach(t => {
     const teacherCard: HTMLElement = document.createElement('div');
     teacherCard.classList.add('teacher-card');
-    teachersGrid.appendChild(teacherCard);
+    teacherGrid.appendChild(teacherCard);
 
     const teacherImg: HTMLImageElement = document.createElement('img');
     teacherImg.src = t.img;
@@ -262,19 +262,19 @@ teacher.forEach(t => {
     teacherName.textContent = t.name;
     teacherCard.appendChild(teacherName);
 
-    teachersGrid.appendChild(teacherCard);
+    teacherGrid.appendChild(teacherCard);
 });
 
 const teachersButton: HTMLAnchorElement = document.createElement('a');
 teachersButton.href = '../teachers.html';
 teachersButton.classList.add('button-teachers');
 teachersButton.textContent = 'Show More';
-teachersGrid.appendChild(teachersButton);
+teacherGrid.appendChild(teachersButton);
 
-teachersContent.appendChild(teachersGrid);
-teachers.appendChild(teachersContent);
+teacherContent.appendChild(teacherGrid);
+teacher.appendChild(teacherContent);
 
-document.body.appendChild(teachers);
+document.body.appendChild(teacher);
 
 
 const footer: HTMLElement = document.createElement('footer');

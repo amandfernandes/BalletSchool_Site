@@ -3,7 +3,9 @@ const path = require('path');
 module.exports = {
   entry: {
     index: ['./src/index.ts'],
-    history: ['./src/history.ts']
+    history: ['./src/history.ts'],
+    gallery: ['./src/gallery.ts'],
+    teachers: ['./src/teachers.ts']
   },
   module: {
     rules: [

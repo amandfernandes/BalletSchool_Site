@@ -2,10 +2,9 @@
   "name": "balletschool_site",
   "version": "1.0.0",
   "description": "Este repositório contém o código fonte de um projeto de página web simples, construído apenas com HTML e CSS. O projeto foi desenvolvido para fins educacionais.",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "set NODE_ENV=development webpack --progress --watch",
-    "prod": "set NODE_ENV=production webpack --progress --watch",
+    "dev": "webpack --progress --watch",
     "server": "live-server --port=5000 --host=localhost --browser=chrome public"
   },
   "keywords": [],
