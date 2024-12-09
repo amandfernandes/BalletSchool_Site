@@ -57,3 +57,57 @@ firstStep.appendChild(firstStepContent);
 
 document.body.appendChild(firstStep);
 
+const areas: HTMLElement = document.createElement('section');
+areas.classList.add('Areas');
+
+const areasContent: HTMLElement = document.createElement('div');
+areasContent.classList.add('areas-content');
+
+const areasImage: HTMLImageElement = document.createElement('img');
+areasImage.src = '../assets/Areas-BS(BalletClass).png'
+areasContent.appendChild(areasImage);
+
+const areasTextGrid: HTMLElement = document.createElement('div');
+areasTextGrid.classList.add('areas-text');
+
+const areasTitle: HTMLElement = document.createElement('h4');
+areasTitle.textContent = "Ares of Teaching";
+areasTextGrid.appendChild(areasTitle);
+
+const areasTeaching: HTMLElement = document.createElement('ul');
+const teachingAreas = [
+    'CLASSICAL',
+    'PAS DE DEUX',
+    'POINTE WORK',
+    'CHARACTEER',
+    'COMTEMPORARY',
+    'GYMNASTICS',
+    'FOLK DANCES',
+    'CHOREOGRAPHICS'
+]
+
+teachingAreas.forEach(a => {
+    const listAreas: HTMLElement = document.createElement('li');
+    listAreas.textContent = a;
+    areasTeaching.appendChild(listAreas);
+});
+areasTextGrid.appendChild(areasTeaching);
+
+const areasTexts = [
+    'Pointe work for the girls is introduced gradually from Year 7 and evolves over the years as feet and ankles strengthen.',
+    'Body conditioning is taught to boys in Year 10 and 11 to increase strength in core stability, preparing them for the demands of pas de deux.',
+    'Pas de deux is introduced in Year 11 with supported adage. These classes are an early introduction to pas de deux, which allow young students to become familiar with the complexities of partnering.'
+]   
+
+areasTexts.forEach(t => {
+    const areasText: HTMLElement = document.createElement('p');
+    areasText.textContent = t;
+    areasTextGrid.appendChild(areasText)
+});
+areasContent.appendChild(areasTextGrid);
+
+areas.appendChild(areasContent);
+
+document.body.appendChild(areas);
+
+
