@@ -110,4 +110,92 @@ areas.appendChild(areasContent);
 
 document.body.appendChild(areas);
 
+const education: HTMLElement = document.createElement("section");
+education.classList.add("education");
+
+const educationContent: HTMLElement = document.createElement("div");
+educationContent.classList.add('education-content');
+
+const educationTextGrid: HTMLElement = document.createElement("div");
+educationTextGrid.classList.add("education-text");
+
+const educationTitle: HTMLElement = document.createElement("h4");
+educationTitle.textContent = 'Dance education';
+educationTextGrid.appendChild(educationTitle);
+
+const educationText: HTMLElement = document.createElement('p');
+educationText.textContent = 'Full-time students of The Royal Ballet School receive a broas education, designed to give them experience of a wide range of roles within the dance sector. Students are taught choreography alongside their classical training and take part in The Creative Artist Programme, making them well-rounded artist ready to enter a competitive industry.';
+educationTextGrid.appendChild(educationText);
+
+educationContent.appendChild(educationTextGrid);
+
+const educationImage: HTMLImageElement = document.createElement("img");
+educationImage.src = "../assets/Education-BS(BalletClass).png";
+educationContent.appendChild(educationImage);
+
+education.appendChild(educationContent);
+
+document.body.appendChild(education);
+
+const audition: HTMLElement = document.createElement('section');
+audition.classList.add('audition');
+
+const auditionContent: HTMLElement = document.createElement("div");
+auditionContent.classList.add('audition-content');
+
+const auditionTitle: HTMLElement = document.createElement('h5');
+audition.textContent = 'APPLY FOR AN AUDITION';
+auditionContent.appendChild(auditionTitle);
+
+const auditionForm: HTMLElement = document.createElement('form');
+
+const nameInput: HTMLInputElement = document.createElement("input");
+nameInput.placeholder = 'Name';
+nameInput.type = 'text';
+nameInput.name = 'name';
+auditionForm.appendChild(nameInput);
+
+const phoneInput: HTMLInputElement = document.createElement('input');
+phoneInput.type = 'text';
+phoneInput.placeholder = 'Number';
+phoneInput.name = 'number';
+auditionForm.appendChild(phoneInput);
+
+const submitButton: HTMLButtonElement = document.createElement("button");
+submitButton.type = 'submit';
+submitButton.textContent = 'Send';
+auditionForm.appendChild(submitButton);
+
+auditionContent.appendChild(auditionForm);
+
+audition.appendChild(auditionContent);
+
+document.body.appendChild(audition);
+
+const balletClassFooter: HTMLElement = document.createElement('footer');
+
+const balletClassFooterContent: HTMLElement = document.createElement('div');
+balletClassFooterContent.classList.add('footer-content');
+
+const balletClassFooterTitle: HTMLElement = document.createElement('h3');
+balletClassFooterTitle.textContent = 'BLACK SWAN';
+balletClassFooterContent.appendChild(balletClassFooterTitle);
+
+const balletClassFooterInfo: HTMLElement = document.createElement('div');
+balletClassFooterInfo.classList.add('footer-right');
+
+const balletClassAddress: HTMLElement = document.createElement('p');
+balletClassAddress.textContent = 'White Lodge, Richmond Park, Richmond, Surrey TW10 5HR, UK';
+balletClassFooterInfo.appendChild(balletClassAddress);
+
+const balletClassPhone: HTMLElement = document.createElement('p');
+balletClassPhone.textContent = '+44 (0)20 8390 8440';
+balletClassFooterInfo.appendChild(balletClassPhone);
+
+balletClassFooterContent.appendChild(balletClassFooterInfo);
+
+balletClassFooter.appendChild(balletClassFooterContent);
+
+document.body.appendChild(balletClassFooter);
+
 

@@ -5,7 +5,8 @@ module.exports = {
     index: ['./src/index.ts'],
     history: ['./src/history.ts'],
     gallery: ['./src/gallery.ts'],
-    teachers: ['./src/teachers.ts']
+    teachers: ['./src/teachers.ts'],
+    balletClass: ['./src/balletClass.ts']
   },
   module: {
     rules: [
