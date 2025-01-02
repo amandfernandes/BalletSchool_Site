@@ -1,5 +1,4 @@
 # Ballet School
-
 🌍
 [English](README-en.md)
 
