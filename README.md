@@ -78,7 +78,7 @@ O projeto utiliza uma combinação de **HTML**, **CSS**, e **TypeScript** para p
 
 1. Clone este repositório:  
    ```bash
-   git clone https://github.com/amandfernandes/BalletSchool_Site.git
+   git clone https://github.com/amandfernandes/BS-BalletSchool.git
 2. Navegue até o diretório do projeto:
     ```bash
     cd BalletSchool_Site
