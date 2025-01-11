@@ -40,7 +40,7 @@ aboutContent.classList.add('about-content')
 about.appendChild(aboutContent);
 
 const logo: HTMLImageElement = document.createElement('img');
-logo.src = '';
+logo.src = '../assets/Logo-BS(BW).png';
 
 aboutContent.appendChild(logo);
 
@@ -137,6 +137,9 @@ const updateHighlight = () => {
     currentItem.style.transform = 'scale(1.2)';
 };
 
+performacesContent.appendChild(performacesGrid);
+performaces.appendChild(performacesContent);
+
 const nextPerformace = () => {
     currentIndex = (currentIndex + 1) % performace.length;
     updateHighlight();
@@ -147,18 +150,15 @@ const prevPerformace = () => {
     updateHighlight();
 };
 
-const nextButton = document.createElement('button');
-nextButton.textContent = '>';
-nextButton.onclick = nextPerformace;
-performacesContent.appendChild(nextButton);
-
 const prevButton = document.createElement('button');
 prevButton.textContent = '<';
 prevButton.onclick = prevPerformace;
-performacesContent.appendChild(prevButton);
+performaces.appendChild(prevButton);
 
-performacesContent.appendChild(performacesGrid);
-performaces.appendChild(performacesContent);
+const nextButton = document.createElement('button');
+nextButton.textContent = '>';
+nextButton.onclick = nextPerformace;
+performaces.appendChild(nextButton);
 
 document.body.appendChild(performaces);
 
@@ -175,10 +175,10 @@ const classesGrid: HTMLElement = document.createElement('div');
 classesGrid.classList.add('classes-grid');
 
 const classroom = [
-    {href: '../balletClass.html', img: './public/assets/', text: 'Ballet Class'},
-    {href: '#', img: '../assets/', text: 'Theatre Dance Class'},
-    {href: '#', img: '../assets/', text: 'Comtemporary Class'},
-    {href: '#', img: '../assets/', text: 'Stretchind Class'}
+    {href: '../balletClass.html', img: '../assets/BalletClass-BS.png', text: 'Ballet Class'},
+    {href: '#', img: '../assets/TheatreDanceClass-BS.png', text: 'Theatre Dance Class'},
+    {href: '#', img: '../assets/ComtemporaryClass-BS.png', text: 'Comtemporary Class'},
+    {href: '#', img: '../assets/StretchigClass-BS.png', text: 'Stretchind Class'}
 ];
 
 classroom.forEach(classItem => {
@@ -194,7 +194,7 @@ classroom.forEach(classItem => {
         classImg.classList.add('class-img');
         link.appendChild(classImg)
 
-        classCard.appendChild(classImg);
+        classCard.appendChild(link);
     }
 
     const classTitle: HTMLElement = document.createElement('p');
@@ -245,7 +245,7 @@ teacherGrid.classList.add('teachers-grid');
 
 const teacherImage = [
     {img: '../assets/', name: 'Anna Pavlova'},
-    {img: '../assets/', name: 'Pyot Ilyich Tchaikovsky'},
+    {img: '../assets/Professor-2.png', name: 'Pyot Ilyich Tchaikovsky'},
     {img: '../assets/', name: 'Sylvie Guillem'}
 ];
 

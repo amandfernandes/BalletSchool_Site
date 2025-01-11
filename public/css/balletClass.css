@@ -2,34 +2,34 @@
 
 body {
     font-family: 'Proxima Nova', sans-serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #f2f2f2;
+    color: #000;
     margin: 0;
     padding: 0;
 }
 
-/* HEADER */
 header {
-    background-color: #000;
+    background-image: url("../assets/Header-BS(BalletClass).png");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
-    padding: 10px 0;
-    width: 100%;
-    overflow: hidden;
+    padding: 11% 0;
+    text-align: center;
     position: relative;
 }
 
-/* NAVIGATION */
 nav {
     position: absolute;
-    top: 5%;
+    top: 2.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
+    margin-top: 10px;
     z-index: 1;
 }
 
 nav ul {
-    display: flex;
     gap: 20px;
     list-style: none;
     margin: 0;
@@ -38,6 +38,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    padding: 5px;
 }
 
 nav ul li a {
@@ -45,11 +46,12 @@ nav ul li a {
     color: #fff;
     position: relative;
     transition: all 0.3s ease;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 nav ul li a:hover {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    color: #fff;
+    text-shadow: 0 0 10px #ffffffd0, 0 0 20px #ffffff7a, 0 0 30px #ffffffad;
 }
 
 nav ul li a::after {
@@ -57,7 +59,6 @@ nav ul li a::after {
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 0;
     height: 2px;
     background-color: #fff;
     transition: width 0.3s ease;
@@ -65,101 +66,231 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
 
-/* TITLE */
-header h1 {
-    position: absolute;
-    top: 10rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
+h1 {
     font-family: 'Ogg', serif;
     font-size: 5rem;
+    text-align: center;
     margin: 0;
+    padding: 100px 0 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-header h1 span {
+.first-step{
+    padding: 10px 20px;
+}
+
+.first-step-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.first-step h4{
+    font-family: "Ogg", serif;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+    color: #000;
+}
+
+.first-step-content img {
+    width: 25rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.first-step-text {
+    max-width: 50%;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.first-step-text p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    display: inline-block;
+    width: fit-content;
+}
+
+.areas {
+    padding: 10px 0;
+}
+
+.areas-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.areas-content img{
+    width: 25rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.areas-text{
+    max-width: 50%;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.areas-text h4 {
+    font-family: "Ogg", serif;
     font-size: 3rem;
     font-weight: lighter;
-    font-family: 'Proxima Nova', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-/* HISTORY CONTENT */
-.historyContent {
+.areas-text ul{
+    font-size: 0.8rem;
+    line-height: 1.6;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.areas-text li{
+    width: calc(50% - 10px);
+    margin-bottom: 5px;
+}
+
+.areas-text p{
+    font-size: 0.8rem;
+    line-height: 1.6;
+    display: inline-block;
+    width: fit-content;
+}
+
+.education{
+    padding: 10px 20px;
     display: flex;
-    flex-direction: column;
+}
+
+.education-content{
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     max-width: 75%;
-    margin: 2em auto;
-    gap: 3em;
+    margin: 0 auto;
 }
 
-.historyContent img {
-    width: 400px;
+.education-content img{
+    width: 25rem;
     height: auto;
-    box-shadow: 0 0 10px #000;
+    object-fit: cover;
 }
 
-.history-grid {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
+.education-text {
+    max-width: 50%;
+    flex-direction: column;
+    padding: 5rem;
 }
 
-.history-grid:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.history-grid h2 {
-    font-family: 'Ogg', serif;
-    color: #000;
-    text-shadow: 
-        1px 0 0 white,
-        -1px 0 0 white,
-        0 1px 0 white,
-        0 -1px 0 white;
-    font-size: 2em;
-}
-
-.history-text h3 {
-    font-family: 'Ogg', serif;
+.education-text h4{
+    font-family: "Ogg", serif;
+    font-size: 3rem;
     font-weight: lighter;
-    font-size: 1.5rem;
-    margin-bottom: 1em;
+    padding: 0;
+    margin: 0;
 }
 
-.history-text p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 0.6rem;
+.education-text p{
+    font-size: 0.8rem;
+    line-height: 1.6;
+    display: inline-block;
+    width: fit-content;
 }
 
-/* FOOTER */
+.audition{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    position: relative; 
+    align-items: center;
+    background-image: url("../assets/Footer-BS\(BalletClass\).png");
+    background-size: cover;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.audition-content h5{
+    font-size: 1rem;    
+    font-weight: lighter;
+    color: #fff;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.audition-content p{
+    font-size: 0.8rem;
+    color: #fff;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.audition-content input{
+    padding: 10px;
+    font-size: 0.6rem;
+    border: 1px solid #fff;
+    width: 200px;
+    background-color: #fff;
+    color: #333; 
+    border: 1px solid #fff; 
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.audition-content button{
+    background-color: #000; 
+    font-size: 0.6rem;
+    color: #fff;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #fff; 
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1); 
+}
+
 footer {
     background-color: black;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
 }
 
 footer h3 {
     font-family: 'Ogg', serif;
     font-weight: lighter;
-    margin: 0;
+    text-align: center;
 }
 
 .footer-content {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 75%;
     margin: 0 auto;
-    text-align: center;
 }
 
 .footer-content p {
     font-size: 0.8rem;
-    margin: 5px 0;
+    padding: 1px;
+    margin-bottom: 0%;
 }

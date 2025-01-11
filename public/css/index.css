@@ -1,42 +1,80 @@
-/* Geral */
+@import url('https://fonts.googleapis.com/css2?family=Ogg&family=Proxima+Nova:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1, h3, h2 {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #f2f2f2;
+    color: #000;
     margin: 0;
     padding: 0;
 }
 
-/* Header */
 header {
-    background-color: #000;
+    background-image: url("../assets/Header-BS.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
-    padding: 20px;
+    padding: 11% 0;
     text-align: center;
+    position: relative;
 }
 
 nav {
-    margin: 10px 0;
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    z-index: 1;
 }
 
-ul {
-    list-style-type: none;
+nav ul {
+    gap: 20px;
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul li {
+    display: inline-block;
+    padding: 5px;
 }
 
-ul li a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
-    font-weight: bold;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #ffffffd0, 0 0 20px #ffffff7a, 0 0 30px #ffffffad;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Ogg', serif;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    padding: 100px 0 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 h1 span {
@@ -45,27 +83,34 @@ h1 span {
     margin-top: 10px;
 }
 
-/* About */
+
 .about {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 20px;
-    background-color: #f9f9f9;
 }
 
 .about-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .about-text {
-    margin-left: 20px;
     max-width: 600px;
+    flex-direction: column;
+    padding: 5rem;
 }
 
 .about-text h2 {
-    font-size: 2rem;
+    font-family: "Ogg", serif;
+    font-size: 8rem;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
 }
 
 .about-text p {
@@ -75,46 +120,89 @@ h1 span {
 }
 
 .button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: #000;
     text-decoration: none;
-    margin-top: 20px;
+    border: 1px solid #ffa500;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover{
+    background-color: #ff9100;
+    color: #fff;
 }
 
 .about img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
-/* Performances */
 .performaces {
-    padding: 40px 20px;
-    background-color: #fff;
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
 }
 
+.performaces-content {
+    background-image: url("../assets/Performance-BS.png");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    position: relative; 
+}   
+
 .performaces h3 {
-    font-size: 2rem;
+    font-size: 8rem;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: lighter;
+    font-family: 'Ogg', serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .performaces p {
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin: 0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto
 }
 
 .performaces-grid {
+    padding: 10px 0;
+    max-width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .performace {
-    background-color: #f1f1f1;
-    padding: 15px;
-    border-radius: 8px;
-    width: 30%;
+    color: #fff;
+    width: 250px;
+    padding: 10px;
     text-align: center;
-    transition: transform 0.3s;
+    max-width: 75%;
+    flex: 1 0 33,33%;
+}
+
+.performace p{
+    margin-bottom: 5px;
+    font-size: 0.8rem;
 }
 
 .performace.highlight {
@@ -123,45 +211,64 @@ h1 span {
 }
 
 button {
-    background-color: #000;
-    color: #fff;
+    color: #000;
+    font-size: 0.8rem;
     border: none;
-    padding: 10px 15px;
+    padding: 5px 15px;
+    margin-top: 2px;
+    border-radius: 10%;
     cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #444;
+    background-color: #444444a9;
+    color: #fff;
+    border: 1px solid #44444446;
 }
 
-/* Classes */
 .classes {
     padding: 40px 20px;
-    background-color: #f9f9f9;
 }
 
 .classes h3 {
-    font-size: 2rem;
+    font-size: 8rem;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: lighter;
+    font-family: 'Ogg', serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .classes-grid {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .class-card {
-    background-color: #fff;
-    width: 200px;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.class-card:nth-child(even){
+    flex-direction: column-reverse;
 }
 
 .class-img {
-    width: 100%;
-    height: auto;
+    width: 15rem; 
+    height: 22rem;
     border-radius: 5px;
 }
 
@@ -169,12 +276,17 @@ button:hover {
     margin-top: 10px;
 }
 
-/* Trial Lesson */
 .trial-lesson {
-    background-color: #000;
-    color: #fff;
-    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    position: relative; 
+    align-items: center;
+    background-image: url("../assets/Sign-BS.png");
+    background-size: cover;
     text-align: center;
+    padding: 30px;
 }
 
 .trial-content {
@@ -183,56 +295,97 @@ button:hover {
 }
 
 .trial-lesson p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
 }
 
 .bottun-trial {
-    background-color: #fff;
-    color: #000;
-    padding: 10px 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.6rem;
+    background-color: transparent;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: background-color 0.3s ease;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .bottun-trial:hover {
-    background-color: #444;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
-/* Teachers */
 .teachers {
-    padding: 40px 20px;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .teachers h3 {
-    font-size: 2rem;
+    font-size: 8rem;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: lighter;
+    font-family: 'Ogg', serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .teachers-grid {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .teacher-card {
-    width: 200px;
+    width: calc(33.33% - 10px); 
+    padding: 10px;
     text-align: center;
-    margin-bottom: 20px;
+    box-sizing: border-box; 
+    margin-bottom: 10px;
 }
 
 .teacher-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 15rem; 
+    height: 15rem;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .teacher-card p {
     margin-top: 10px;
 }
 
-/* Footer */
+.button-teachers{
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px 15px;
+    font-size: 0.6rem;
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #ffa500;
+    transition: background-color 0.3s ease;
+}
+
+.button-teachers:hover{
+    background-color: #ff9100;
+    color: #fff;
+}
+
 footer {
     background-color: #000;
     color: #fff;
@@ -241,7 +394,11 @@ footer {
 
 .footer-content {
     display: flex;
+    align-items: left;
+    flex-direction: column; 
     justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .footer-left, .footer-right {
@@ -249,27 +406,41 @@ footer {
 }
 
 footer h3 {
-    margin-bottom: 20px;
+    font-family: 'Ogg', serif;
+    font-weight: lighter;
     text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 footer p {
-    margin-bottom: 10px;
+    font-size: 0.8rem;
+    padding: 1px;
+    margin-bottom: 0%;
 }
 
 footer input {
     padding: 10px;
-    margin-right: 10px;
-    width: 70%;
-    border-radius: 5px;
+    font-size: 0.6rem;
+    border: 1px solid #fff;
+    width: 200px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 footer button {
-    padding: 10px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 5px;
+    background-color: #000;
+    font-size: 0.6rem;
+    color: #fff;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
     cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 0;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1);
 }
 
 footer button:hover {

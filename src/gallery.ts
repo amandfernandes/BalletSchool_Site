@@ -20,7 +20,7 @@ galleryNav.appendChild(galleryUl);
 galleryHeader.appendChild(galleryNav)
 
 const galleryTitle: HTMLHeadingElement = document.createElement("h1");
-galleryTitle.textContent = "Gallery";
+galleryTitle.textContent = "GALLERY";
 galleryHeader.appendChild(galleryTitle);
 
 document.body.appendChild(galleryHeader);
@@ -121,10 +121,6 @@ const galleryFooter: HTMLElement = document.createElement('footer');
 const galleryFooterContent: HTMLElement = document.createElement('div');
 galleryFooterContent.classList.add('footer-content');
 
-const galleryFooterTitle: HTMLElement = document.createElement('h3');
-galleryFooterTitle.textContent = 'BLACK SWAN';
-galleryFooterContent.appendChild(galleryFooterTitle);
-
 const galleryFooterLeft: HTMLElement = document.createElement('div');
 galleryFooterLeft.classList.add('footer-left');
 
@@ -160,6 +156,10 @@ galleryPhone.textContent = '+44 (0)20 8390 8440';
 galleryFooterRight.appendChild(galleryPhone);
 
 galleryFooterContent.appendChild(galleryFooterRight);
+
+const galleryFooterTitle: HTMLElement = document.createElement('h3');
+galleryFooterTitle.textContent = 'BLACK SWAN';
+galleryFooterContent.appendChild(galleryFooterTitle);
 
 galleryFooter.appendChild(galleryFooterContent);
 

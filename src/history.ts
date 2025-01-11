@@ -20,7 +20,7 @@ historyNav.appendChild(historyUl);
 historyHeader.appendChild(historyNav)
 
 const historyTitle: HTMLHeadingElement = document.createElement("h1");
-historyTitle.textContent = "History";
+historyTitle.textContent = "HISTORY";
 historyHeader.appendChild(historyTitle);
 
 document.body.appendChild(historyHeader);
@@ -60,7 +60,7 @@ function createHistory(img: string, year: string, title: string, text: string[])
 
 const addHistory = [
     createHistory(
-        '../assets/History-1.png',
+        '../assets/History-2.png',
         '1926',
         'Founding of the School',
         [
@@ -70,7 +70,7 @@ const addHistory = [
     ),
 
     createHistory(
-        '../assets/History-2.png',
+        '../assets/History-1.png',
         '1946',
         'Nive to Cover Garden',
         [
@@ -109,10 +109,6 @@ const historyFooter: HTMLElement = document.createElement('footer');
 const historyFooterContent: HTMLElement = document.createElement('div');
 historyFooterContent.classList.add('footer-content');
 
-const historyFooterTitle: HTMLElement = document.createElement('h3');
-historyFooterTitle.textContent = 'BLACK SWAN';
-historyFooterContent.appendChild(historyFooterTitle);
-
 const historyFooterInfo: HTMLElement = document.createElement('div');
 historyFooterInfo.classList.add('footer-right');
 
@@ -125,6 +121,10 @@ historyPhone.textContent = '+44 (0)20 8390 8440';
 historyFooterInfo.appendChild(historyPhone);
 
 historyFooterContent.appendChild(historyFooterInfo);
+
+const historyFooterTitle: HTMLElement = document.createElement('h3');
+historyFooterTitle.textContent = 'BLACK SWAN';
+historyFooterContent.appendChild(historyFooterTitle);
 
 historyFooter.appendChild(historyFooterContent);
 

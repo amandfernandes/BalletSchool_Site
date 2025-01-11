@@ -20,18 +20,21 @@ balletClassNav.appendChild(balletClassUl);
 balletClassHeader.appendChild(balletClassNav)
 
 const balletClassTitle: HTMLHeadingElement = document.createElement("h1");
-balletClassTitle.textContent = "Ballet Class";
+balletClassTitle.textContent = "BALLET CLASS";
 balletClassHeader.appendChild(balletClassTitle);
 
 document.body.appendChild(balletClassHeader);
 
 
 const firstStep: HTMLElement = document.createElement('section');
+firstStep.classList.add('first-step');
 
 const firstStepTitle: HTMLElement = document.createElement('h4');
 firstStepTitle.textContent = 'Your first step on the path to a career a classical baller dancer';
+firstStep.appendChild(firstStepTitle)
 
 const firstStepContent: HTMLElement =document.createElement("div");
+firstStepContent.classList.add('first-step-content');
 
 const firstStepTextGrid: HTMLElement = document.createElement('div');
 firstStepTextGrid.classList.add('first-step-text');
@@ -144,7 +147,7 @@ const auditionContent: HTMLElement = document.createElement("div");
 auditionContent.classList.add('audition-content');
 
 const auditionTitle: HTMLElement = document.createElement('h5');
-audition.textContent = 'APPLY FOR AN AUDITION';
+auditionTitle.textContent = 'APPLY FOR AN AUDITION';
 auditionContent.appendChild(auditionTitle);
 
 const auditionForm: HTMLElement = document.createElement('form');
@@ -177,10 +180,6 @@ const balletClassFooter: HTMLElement = document.createElement('footer');
 const balletClassFooterContent: HTMLElement = document.createElement('div');
 balletClassFooterContent.classList.add('footer-content');
 
-const balletClassFooterTitle: HTMLElement = document.createElement('h3');
-balletClassFooterTitle.textContent = 'BLACK SWAN';
-balletClassFooterContent.appendChild(balletClassFooterTitle);
-
 const balletClassFooterInfo: HTMLElement = document.createElement('div');
 balletClassFooterInfo.classList.add('footer-right');
 
@@ -193,6 +192,10 @@ balletClassPhone.textContent = '+44 (0)20 8390 8440';
 balletClassFooterInfo.appendChild(balletClassPhone);
 
 balletClassFooterContent.appendChild(balletClassFooterInfo);
+
+const balletClassFooterTitle: HTMLElement = document.createElement('h3');
+balletClassFooterTitle.textContent = 'BLACK SWAN';
+balletClassFooterContent.appendChild(balletClassFooterTitle);
 
 balletClassFooter.appendChild(balletClassFooterContent);
 

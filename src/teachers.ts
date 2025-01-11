@@ -20,7 +20,7 @@ teachersNav.appendChild(teachersUl);
 teachersHeader.appendChild(teachersNav)
 
 const teachersTitle: HTMLHeadingElement = document.createElement("h1");
-teachersTitle.textContent = "Teachers";
+teachersTitle.textContent = "TEACHERS";
 teachersHeader.appendChild(teachersTitle);
 
 document.body.appendChild(teachersHeader);
@@ -36,7 +36,7 @@ teachersGrid.classList.add('teachers-grid');
 
 const teachersImage = [
     {img: '../assets/', name: 'Anna Pavlova', info: 'breve descrição'},
-    {img: '../assets/', name: 'Pyot Ilyich Tchaikovsky', info:'breve descrição'},
+    {img: '../assets/Professor-2.png', name: 'Pyot Ilyich Tchaikovsky', info:'breve descrição'},
     {img: '../assets/', name: 'Sylvie Guillem', info: 'breve descrição'},
     {img: '../assets/', name: 'Pierre Beauchamps', info: 'breve descrição'},
     {img: '../assets/', name: 'Madame Theodore', info: 'breve descrição'}
@@ -94,10 +94,6 @@ const teachersFooter: HTMLElement = document.createElement('footer');
 const teachersFooterContent: HTMLElement = document.createElement('div');
 teachersFooterContent.classList.add('footer-content');
 
-const teachersFooterTitle: HTMLElement = document.createElement('h3');
-teachersFooterTitle.textContent = 'BLACK SWAN';
-teachersFooterContent.appendChild(teachersFooterTitle);
-
 const teachersFooterInfo: HTMLElement = document.createElement('div');
 teachersFooterInfo.classList.add('footer-right');
 
@@ -110,6 +106,10 @@ teachersPhone.textContent = '+44 (0)20 8390 8440';
 teachersFooterInfo.appendChild(teachersPhone);
 
 teachersFooterContent.appendChild(teachersFooterInfo);
+
+const teachersFooterTitle: HTMLElement = document.createElement('h3');
+teachersFooterTitle.textContent = 'BLACK SWAN';
+teachersFooterContent.appendChild(teachersFooterTitle);
 
 teachersFooter.appendChild(teachersFooterContent);
 
